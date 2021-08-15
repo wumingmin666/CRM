@@ -5,7 +5,7 @@
 <configuration>
     <properties resource="jdbc.properties"/>
     <typeAliases>
-        <package name="com.example.crm.setting.domain.User"/>
+        <package name="com.example.crm.setting.domain"/>
     </typeAliases>
 
     <environments default="development">
@@ -20,6 +20,6 @@
         </environment>
     </environments>
     <mappers>
-        <mapper resource="com.example.crm.setting.dao"/>
+        <mapper resource="com/example/crm/setting/dao/UserDao.xml"/>
     </mappers>
 </configuration>
